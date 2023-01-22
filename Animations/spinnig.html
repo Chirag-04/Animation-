@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning </title>
+    <style>
+@keyframes spinning{
+
+0%{
+    border-radius: 50%;
+}
+50%{
+    border-radius: 0%;
+    transform: rotate(-560deg) scale(3);
+}
+100%{
+    border-radius: 50%;
+    
+}
+
+
+}
+.box{
+        height: 100px;
+        width: 100px;
+        background-color:rgb(137, 173, 255);
+        position: absolute;
+        border-radius: 50%;
+            left:20%;
+        top:20%;
+animation: spinning 1s ease-in-out infinite alternate;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
